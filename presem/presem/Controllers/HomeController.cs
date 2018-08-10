@@ -10,12 +10,22 @@ namespace presem.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public ViewResult Index()
+        {
+            return View("Opportunities");
+        }
+
+        [HttpGet]
+        public ViewResult EditForm()
         {
             return View();
         }
 
-        
+        [HttpPost]
+        public ViewResult BogusForm()
+        {
+            return View();
+        }
        
         public IActionResult Error()
         {

@@ -12543,11 +12543,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\dream\\source\\repos\\presem\\presem\\presem.csproj",
+      "projectUniqueName": "C:\\Users\\dream\\Desktop\\presem\\presem\\presem.csproj",
       "projectName": "presem",
-      "projectPath": "C:\\Users\\dream\\source\\repos\\presem\\presem\\presem.csproj",
+      "projectPath": "C:\\Users\\dream\\Desktop\\presem\\presem\\presem.csproj",
       "packagesPath": "C:\\Users\\dream\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dream\\source\\repos\\presem\\presem\\obj\\",
+      "outputPath": "C:\\Users\\dream\\Desktop\\presem\\presem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

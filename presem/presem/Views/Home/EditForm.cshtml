@@ -1,0 +1,66 @@
+﻿
+
+@model presem.Models.Opportunity
+
+@{
+    Layout = null;
+}
+
+@* This is the View for the Edit Form. *@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Opportunity</title>
+</head>
+
+<body>
+    <h2>Edit Opportunity</h2>
+    <form asp-action="EditForm" method="post">
+        <h3>Location</h3>
+        <p>
+            <label asp-for="Center">Center Name:</label>
+            <br />
+            <input asp-for="Center" />
+        </p>
+
+        <p>
+            <label asp-for="CenterAddress">Center Street Address:</label>
+            <br />
+            <input asp-for="CenterAddress" />
+        </p>
+
+        <h3>Opportunity Details</h3>
+        <p>
+            <label asp-for="Times">Times volunteers are needed:</label>
+            <br>
+            <input type='checkbox' asp-for='Times' value='1:00 PM'/> 1:00 PM
+            <br />
+            <input type ="checkbox" asp-for="Times" value ="2:00 PM"/> 2:00 PM
+            <br />
+        </p>
+        <p>
+            <label>Skill necessary for this opportunity:</label>
+            <br />
+            <select asp-for="Skill">
+                <option value="">Choose an option.</option>
+                <option value="Read">Ability to teach children how to read</option>
+                <option value="Compute">Ability to teach children how to compute elementary level math</option>
+                <option value="Build">Ability to build IKEA furniture</option>
+            </select>
+         </p>
+
+        <p>
+            <label>Is a college degree necessary for this opportunity? </label>
+            <br />
+            <select asp-for="College">
+                <option value="">Choose an option.</option>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+        </p>
+
+        <button type="submit">Submit Changes</button>
+
+    </form>
+</body>
+</html>

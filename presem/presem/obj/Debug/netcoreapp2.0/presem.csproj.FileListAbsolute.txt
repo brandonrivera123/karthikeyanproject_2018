@@ -9,3 +9,14 @@ C:\Users\dream\source\repos\presem\presem\obj\Debug\netcoreapp2.0\presem.Assembl
 C:\Users\dream\source\repos\presem\presem\obj\Debug\netcoreapp2.0\presem.AssemblyInfo.cs
 C:\Users\dream\source\repos\presem\presem\obj\Debug\netcoreapp2.0\presem.dll
 C:\Users\dream\source\repos\presem\presem\obj\Debug\netcoreapp2.0\presem.pdb
+C:\Users\dream\Desktop\presem\presem\bin\Debug\netcoreapp2.0\presem.deps.json
+C:\Users\dream\Desktop\presem\presem\bin\Debug\netcoreapp2.0\presem.runtimeconfig.json
+C:\Users\dream\Desktop\presem\presem\bin\Debug\netcoreapp2.0\presem.runtimeconfig.dev.json
+C:\Users\dream\Desktop\presem\presem\bin\Debug\netcoreapp2.0\presem.dll
+C:\Users\dream\Desktop\presem\presem\bin\Debug\netcoreapp2.0\presem.pdb
+C:\Users\dream\Desktop\presem\presem\obj\Debug\netcoreapp2.0\presem.csprojResolveAssemblyReference.cache
+C:\Users\dream\Desktop\presem\presem\obj\Debug\netcoreapp2.0\presem.csproj.CoreCompileInputs.cache
+C:\Users\dream\Desktop\presem\presem\obj\Debug\netcoreapp2.0\presem.AssemblyInfoInputs.cache
+C:\Users\dream\Desktop\presem\presem\obj\Debug\netcoreapp2.0\presem.AssemblyInfo.cs
+C:\Users\dream\Desktop\presem\presem\obj\Debug\netcoreapp2.0\presem.dll
+C:\Users\dream\Desktop\presem\presem\obj\Debug\netcoreapp2.0\presem.pdb
