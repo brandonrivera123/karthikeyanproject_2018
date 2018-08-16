@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VMSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="volunteer">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Centers" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Skills" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Availability" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="StreetAddress" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="CityAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="StateAddress" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="ZipAddress" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="HomePhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="WorkPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CellPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Education" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Liscenses" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ECFirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ECLastName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ECHomePhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ECCellPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ECEmail" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ECStreetAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ECCityAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ECStateAddress" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="ECZipcode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DLFile" Type="Boolean" Nullable="false" />
+    <Property Name="SSFile" Type="Boolean" Nullable="false" />
+    <Property Name="ApprovalStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="VMSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="volunteers" EntityType="Self.volunteer" />
+  </EntityContainer>
+</Schema>

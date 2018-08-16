@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VMSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="volunteer">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="FirstName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="Centers" Type="varchar" MaxLength="100" />
+    <Property Name="Skills" Type="varchar" MaxLength="50" />
+    <Property Name="Availability" Type="varchar" MaxLength="50" />
+    <Property Name="StreetAddress" Type="varchar" MaxLength="400" />
+    <Property Name="CityAddress" Type="varchar" MaxLength="50" />
+    <Property Name="StateAddress" Type="varchar" MaxLength="4" />
+    <Property Name="ZipAddress" Type="varchar" MaxLength="5" />
+    <Property Name="HomePhone" Type="varchar" MaxLength="50" />
+    <Property Name="WorkPhone" Type="varchar" MaxLength="50" />
+    <Property Name="CellPhone" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="Education" Type="varchar" MaxLength="1000" />
+    <Property Name="Liscenses" Type="varchar" MaxLength="50" />
+    <Property Name="ECFirstName" Type="varchar" MaxLength="50" />
+    <Property Name="ECLastName" Type="varchar" MaxLength="100" />
+    <Property Name="ECHomePhone" Type="varchar" MaxLength="50" />
+    <Property Name="ECCellPhone" Type="varchar" MaxLength="50" />
+    <Property Name="ECEmail" Type="nvarchar" MaxLength="100" />
+    <Property Name="ECStreetAddress" Type="varchar" MaxLength="100" />
+    <Property Name="ECCityAddress" Type="varchar" MaxLength="100" />
+    <Property Name="ECStateAddress" Type="varchar" MaxLength="5" />
+    <Property Name="ECZipcode" Type="varchar" MaxLength="50" />
+    <Property Name="DLFile" Type="bit" Nullable="false" />
+    <Property Name="SSFile" Type="bit" Nullable="false" />
+    <Property Name="ApprovalStatus" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="VMSModelStoreContainer">
+    <EntitySet Name="volunteer" EntityType="Self.volunteer" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
