@@ -1,18 +1,37 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<style>
+    a.my-class{
+        color:white !important;
+    }
+    a.my-class:hover{
+        text-decoration:none;
+    }
+</style>
 
-<p>
-    @Html.ActionLink("Create Volunteer", "Create", "Volunteers")
-</p>
-
-<p>
-    @Html.ActionLink("View Volunteers", "Index", "Volunteers")
-</p>
-<p>
-    @Html.ActionLink("Create Opportunity", "Create", "Opportunities")
-</p>
-
-<p>
-    @Html.ActionLink("View Opportunities", "Index", "Opportunities")
-</p>
+<div class="jumbotron">
+    <h2 style="margin-bottom:40px;">Welcome to Volunteer Application</h2>
+    <div class="row">
+        <!--<div class="col-lg-2">
+            <button class="btn btn-primary">
+                @Html.ActionLink("Create Volunteer", "Create", "Volunteers", new { @class = "my-class" })
+            </button>
+        </div>-->
+        <div class="col-lg-2">
+            <button class="btn btn-primary">
+                @Html.ActionLink("View Volunteers", "Index", "Volunteers", new { @class = "my-class" })
+            </button>
+        </div>
+      <!--<div class="col-lg-2">
+            <button class="btn btn-primary">
+                @Html.ActionLink("Create Opportunity", "Create", "Opportunities", new { @class = "my-class" })
+            </button>
+        </div>-->
+        <div class="col-lg-2">
+            <button class="btn btn-primary">
+                @Html.ActionLink("View Opportunities", "Index", "Opportunities", new { @class = "my-class" })
+            </button>
+        </div>
+    </div>
+</div>
