@@ -1,0 +1,69 @@
+﻿@model IEnumerable<VolunteerOpportunities.Models.Opportunity>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OStreetAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OState)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OZipCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OSkill)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OTimes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OCollege)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OStreetAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OState)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OZipCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OSkill)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OTimes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OCollege)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.OID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.OID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.OID })
+        </td>
+    </tr>
+}
+
+</table>

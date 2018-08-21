@@ -1,0 +1,74 @@
+﻿@model VolunteerOpportunities.Models.Opportunity
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Opportunity</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OStreetAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OStreetAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OState)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OState)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OZipCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OZipCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OSkill)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OSkill)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OTimes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OTimes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OCollege)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OCollege)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

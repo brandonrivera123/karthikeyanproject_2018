@@ -1,0 +1,153 @@
+﻿@model IEnumerable<VolunteerOpportunities.Models.Volunteer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Username)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VolunteerLocation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Skills)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Availability)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HomeNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CellNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WorkNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Education)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Licenses)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmergnecyName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmergencyNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmergencyEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmergencyAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DLFile)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SSNFile)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ApprovalStatus)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Username)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VolunteerLocation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Skills)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Availability)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HomeNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CellNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WorkNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Education)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Licenses)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmergnecyName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmergencyNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmergencyEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmergencyAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DLFile)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SSNFile)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ApprovalStatus)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

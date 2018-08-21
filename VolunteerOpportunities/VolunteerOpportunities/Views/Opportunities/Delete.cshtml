@@ -1,0 +1,80 @@
+﻿@model VolunteerOpportunities.Models.Opportunity
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Opportunity</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OStreetAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OStreetAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OState)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OState)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OZipCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OZipCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OSkill)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OSkill)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OTimes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OTimes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OCollege)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OCollege)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
